@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    height: 100vh;
+    
+}
+
+.info{
+    display: flex;
+    gap : 1rem ;
+    margin-left : 2rem;
+}
+
+.individual {
+    list-style: none;
+    border : 1px solid #212529;
+}
+.search {
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
