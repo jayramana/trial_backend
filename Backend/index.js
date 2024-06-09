@@ -3,10 +3,14 @@ const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
 const gym_Routes = require("./routes/database.routes.js")
+const cors = require('cors')
 require('dotenv').config()
-const port_no = 3000;
+const port_no = 8000;
 
 app.use(express.json());
+
+app.use(cors())
+
 
 app.get("/", (req, res) => {
   res.send(

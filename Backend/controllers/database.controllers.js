@@ -12,7 +12,7 @@ const getAlltasks = async (req, res) => {
 const getOnetask = async (req, res) => {
   try {
     const { id } = req.params;
-    const getOne = await Gym_Schema.findOne(id);
+    const getOne = await Gym_Schema.findOne({ _id: id });
     res.status(200).json(getOne);
   } catch (error) {
     res.status(500).json("Not found !");
